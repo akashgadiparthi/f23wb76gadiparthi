@@ -3,3 +3,14 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  p I am very intersted in sports
+  button(type="button", class="btn btn-secondary") Press Me 
+  var express = require('express');
+var router = express.Router();
+
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Express' });
+});
+
+module.exports = router;
