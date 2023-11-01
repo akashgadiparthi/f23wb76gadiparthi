@@ -8,3 +8,8 @@ block content
                 div(class = "col-sm-2 bg-danger" onclick=`buy(${item})`) #{form.Fox_breed}                
                 div(class = "col-sm-2 bg-danger" onclick=`buy(${item})`) #{form.Fox_price}
                 hr
+    script. 
+          function buy(itemNo) 
+          { 
+            alert(`You purchased Item ${itemNo+1}`) 
+          }            
