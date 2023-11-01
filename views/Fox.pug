@@ -2,6 +2,7 @@ extends layout
 block content
     div(class="container-fluid")
         h1= title
+<<<<<<< HEAD
     - let results=[{Deer_color:"red",Deer_breed:"White-tailed deer",Deer_price:10000},{Deer_color:"brown",Deer_breed:"Fallow deer",Deer_price:11500},{Deer_color:"yellow",Deer_breed:"Mule deer",Deer_price:9000}]
         div(class="row")
             each form,item in results
@@ -10,3 +11,12 @@ block content
                 div(class = "col-sm-2 bg-danger" onclick=`buy(${item})`) #{form.Deer_price}
                 hr
     
+=======
+    - let results=[{Fox_color:"yellow",Fox_breed:"Domesticated silver fox",Fox_price:12000},{Deer_color:"red",Fox_breed:"Vulpes vulpes fulva",Fox_price:11000},{Fox_color:"green",Fox_breed:"English Foxhound",Deer_price:10000}]
+        div(class="row")
+            each form,item in results
+                div(class = "col-sm-2 bg-danger" onclick=`buy(${item})`) #{form.Fox_color}              
+                div(class = "col-sm-2 bg-danger" onclick=`buy(${item})`) #{form.Fox_breed}                
+                div(class = "col-sm-2 bg-danger" onclick=`buy(${item})`) #{form.Fox_price}
+                hr
+>>>>>>> 54c1155ccb0c540a2de4a82d2909b3b357f4bbb0
